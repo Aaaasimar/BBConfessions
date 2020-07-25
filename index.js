@@ -14,7 +14,7 @@ var loggingChannel
 client.on('ready', () => {
 
     // Get the text channel that the confession should be logged to.
-    client.channels.fetch(process.env.CONFESS_CHANNEL_ID).then((channel) => {
+    client.channels.fetch(process.env.LOGGING_CHANNEL_ID).then((channel) => {
         loggingChannel = channel;
 
         // The bot expects to post into text channels
@@ -26,7 +26,7 @@ client.on('ready', () => {
     });
 
     // Get the text channel that should be logged to
-    client.channels.fetch(process.env.LOGGING_CHANNEL_ID).then((channel) => {
+    client.channels.fetch(process.env.CONFESS_CHANNEL_ID).then((channel) => {
         confessChannel = channel;
 
         // The bot expects to post into text channels
