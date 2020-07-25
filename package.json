@@ -1,5 +1,5 @@
 {
-  "name": "BBConfessions",
+  "name": "bb-confessions",
   "version": "1.0.0",
   "description": "An anonymous confession bot.",
   "main": "index.js",
